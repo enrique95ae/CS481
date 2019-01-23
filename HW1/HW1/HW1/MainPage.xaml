@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:HW1" 
+             x:Class="HW1.MainPage">
+    <StackLayout>
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            
+            
+           <Label
+                Text="CS 481 - HW1"
+                TextColor="Black"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Grid.Column="2"
+                Grid.Row="3"
+                Grid.ColumnSpan="3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+            
+            <Label
+                Text="Name:"
+                TextColor="Black"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Grid.Column="1"
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                />
+            
+             <Label
+                Text="Enrique"
+                TextColor="Black"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Grid.Column="3"
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                />
+            
+              <Label
+                Text="L.Name:"
+                TextColor="Black"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Grid.Column="1"
+                Grid.Row="6"
+                Grid.ColumnSpan="2"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                />
+            
+              <Label
+                Text="Alonso Esposito"
+                TextColor="Black"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Grid.Column="3"
+                Grid.Row="6"
+                Grid.ColumnSpan="3"
+                />
+            
+              <Label
+                Text="Major:"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Grid.Column="1"
+                Grid.Row="7"
+                Grid.ColumnSpan="2"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                />
+            
+              <Label
+                Text="Computer Science"
+                TextColor="Black"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Grid.Column="3"
+                Grid.Row="7"
+                Grid.ColumnSpan="3"
+                />
+            
+              <Label
+                Text="Graduation:"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Grid.Column="1"
+                Grid.Row="8"
+                Grid.ColumnSpan="2"
+                TextDecorations="Underline"
+                FontAttributes="Bold"
+                FontSize="Medium"
+                />
+            
+              <Label
+                Text="Summer 2019"
+                TextColor="Black"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Start"
+                Grid.Column="3"
+                Grid.Row="8"
+                Grid.ColumnSpan="2"
+                />
+            
+            </Grid>
+       
+    </StackLayout>
+</ContentPage>
