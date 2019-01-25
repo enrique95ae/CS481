@@ -12,4 +12,9 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MagicPage.xaml.cs">
+      <DependentUpon>MagicPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

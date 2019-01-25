@@ -141,6 +141,16 @@
                 Grid.ColumnSpan="2"
                 />
             
+              <Button
+                Text="Magic Button"
+                Grid.Row="12"
+                Grid.Column="3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Grid.ColumnSpan="3"
+                Clicked="MagicBtn_Clicked"
+                />
+            
             </Grid>
        
     </StackLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="HW1.MagicPage">
+    <StackLayout>
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+            
+            
+           <Label
+                Text="Just kidding, it only opens this page."
+                TextColor="Black"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                Grid.Row="2"
+                Grid.ColumnSpan="5"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+            
+              <Button
+                Text="Awesome Button"
+                Grid.Row="3"
+                Grid.Column="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Grid.ColumnSpan="3"
+                Clicked="MessageBtn_Clicked"
+                />
+            
+            </Grid>
+       
+    </StackLayout>
+</ContentPage>

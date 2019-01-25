@@ -13,5 +13,11 @@ namespace HW1
         {
             InitializeComponent();
         }
+
+        //Button click handler
+        private async void MagicBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MagicPage());
+        }
     }
 }
