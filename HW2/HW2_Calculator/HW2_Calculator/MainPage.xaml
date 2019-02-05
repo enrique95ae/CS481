@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:HW2_Calculator" 
+             x:Class="HW2_Calculator.MainPage"
+             
+             
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+                ios:Page.UseSafeArea="true" 
+             
+             BackgroundColor="Black"
+             >
+
+       <StackLayout >
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Padding="2" ColumnSpacing="2" Margin="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <BoxView
+                BackgroundColor="Black"
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="4"
+            />
+            
+            <Label
+                x:Name="displayNum_Label"
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="4"
+                Grid.RowSpan="2"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="End"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Text="0"
+                TextColor="White"
+            />
+            
+            <Button
+                x:Name="seven_Button"
+                Grid.Row="2"
+                Grid.Column="0"
+                BackgroundColor="#D4D4D2"
+                Text="7"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="sevenButton_Clicked"
+            />
+            
+            <Button
+                x:Name="eight_Button"
+                Grid.Row="2"
+                Grid.Column="1"
+                BackgroundColor="#D4D4D2"
+                Text="8"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="eightButton_Clicked"
+            />
+            
+            <Button
+                x:Name="nine_Button"
+                Grid.Row="2"
+                Grid.Column="2"
+                BackgroundColor="#D4D4D2"
+                Text="9"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="nineButton_Clicked"
+            />
+            
+            <Button
+                x:Name="four_Button"
+                Grid.Row="3"
+                Grid.Column="0"
+                BackgroundColor="#D4D4D2"
+                Text="4"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="fourButton_Clicked"
+            />
+            
+            <Button
+                x:Name="five_Button"
+                Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="#D4D4D2"
+                Text="5"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="fiveButton_Clicked"
+            />
+            
+            <Button
+                x:Name="six_Button"
+                Grid.Row="3"
+                Grid.Column="2"
+                BackgroundColor="#D4D4D2"
+                Text="6"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="sixButton_Clicked"
+            />
+            
+            <Button
+                x:Name="one_Button"
+                Grid.Row="4"
+                Grid.Column="0"
+                BackgroundColor="#D4D4D2"
+                Text="1"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="oneButton_Clicked"
+            />
+            
+            <Button
+                x:Name="two_Button"
+                Grid.Row="4"
+                Grid.Column="1"
+                BackgroundColor="#D4D4D2"
+                Text="2"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="twoButton_Clicked"
+            />
+            
+            <Button
+                x:Name="three_Button"
+                Grid.Row="4"
+                Grid.Column="2"
+                BackgroundColor="#D4D4D2"
+                Text="3"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="threeButton_Clicked"
+            />
+            
+           <Button
+                x:Name="div_Button"
+                Grid.Row="2"
+                Grid.Column="3"
+                BackgroundColor="#FF9500"
+                Text="/"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="divButton_Clicked"
+            />
+            
+           <Button
+                x:Name="mul_Button"
+                Grid.Row="3"
+                Grid.Column="3"
+                BackgroundColor="#FF9500"
+                Text="X"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="mulButton_Clicked"
+            />
+            
+           <Button
+                x:Name="sub_Button"
+                Grid.Row="4"
+                Grid.Column="3"
+                BackgroundColor="#FF9500"
+                Text="-"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="subButton_Clicked"
+            />
+            
+           <Button
+                x:Name="add_Button"
+                Grid.Row="5"
+                Grid.Column="3"
+                BackgroundColor="#FF9500"
+                Text="+"
+                TextColor="Black"
+                FontSize="Large"
+                Clicked="addButton_Clicked"
+            />
+            
+           <Button
+                x:Name="zero_Button"
+                Grid.Row="5"
+                Grid.Column="0"
+                BackgroundColor="#D4D4D2"
+                Text="0"
+                TextColor="Black"
+                FontSize="Large"
+                Grid.ColumnSpan="3"
+                Clicked="zeroButton_Clicked"
+            />
+            
+           <Button
+                x:Name="clear_Button"
+                Grid.Row="6"
+                Grid.Column="0"
+                BackgroundColor="#505050"
+                Text="C"
+                TextColor="White"
+                FontSize="Large"
+                Clicked="clearButton_Clicked"
+            />
+            
+           <Button
+                x:Name="equal_Button"
+                Grid.Row="6"
+                Grid.Column="1"
+                BackgroundColor="#FF9500"
+                Text="="
+                TextColor="White"
+                FontSize="Large"
+                Grid.ColumnSpan="3"
+                Clicked="equalButton_Clicked"
+            />
+            
+            
+            </Grid>
+        
+        </StackLayout>
+
+    
+</ContentPage>
