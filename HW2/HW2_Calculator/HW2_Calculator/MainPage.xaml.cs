@@ -9,6 +9,9 @@ namespace HW2_Calculator
 {
     public partial class MainPage : ContentPage
     {
+        //KNOWN ERRORS:
+            //Calculator doesn't stack operations, that is: An operation has to be completed (equal button pressed)
+            //before using it's result along with another quanity.
 
         double temp1, temp2, result;
         string operation;
