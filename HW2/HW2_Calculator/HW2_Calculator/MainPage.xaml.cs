@@ -23,7 +23,7 @@ namespace HW2_Calculator
             displayNum_Label.Text = "";
         }
 
-        //NUMBERS BUTTONS
+        //NUMBER BUTTONS
 
         private void sevenButton_Clicked(object sender, EventArgs e)
         {
@@ -75,7 +75,7 @@ namespace HW2_Calculator
             displayNum_Label.Text = displayNum_Label.Text + "0";
         }
 
-        //OPERATIONS BUTTONS
+        //OPERATION BUTTONS
 
         private void clearButton_Clicked(object sender, EventArgs e)
         {
