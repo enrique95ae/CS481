@@ -13,6 +13,8 @@ namespace HW2_Calculator
             //Calculator doesn't stack operations, that is: An operation has to be completed (equal button pressed)
             //before using it's result along with another quanity.
 
+            //If the display number has too many characters, the GUI will get super narrow. 
+
         double temp1, temp2, result;
         string operation;
 
