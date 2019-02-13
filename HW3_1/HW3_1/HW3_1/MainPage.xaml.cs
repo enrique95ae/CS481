@@ -12,6 +12,15 @@ namespace HW3_1
         public MainPage()
         {
             InitializeComponent();
+
+            var pokemon1 = new PokemonModel
+            {
+                pokemonNumber = 151,
+                pokemonName = "Mew",
+                pokemonImg1 = "https://usercontent1.hubstatic.com/14145286_f520.jpg",
+                pokemonImg2 = "",
+                pokemonImg3 = "",
+            };
         }
     }
 }

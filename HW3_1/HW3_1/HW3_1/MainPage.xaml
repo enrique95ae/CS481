@@ -3,8 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:HW3_1" 
              x:Class="HW3_1.MainPage">
-    
-    <StackLayout>
-
-    </StackLayout>
+             
+    <Grid Padding="5" ColumnSpacing="8" RowSpacing="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label
+            x:Name="titleLabel"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="7"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            FontSize="Large"
+            FontAttributes="Bold"
+            Text="MEW"
+        />
+        
+        <Image
+            x:Name="mewPic"
+            Grid.Row="1"
+            Grid.Column="3"
+            Grid.RowSpan="3"
+            Grid.ColumnSpan="3"
+        />            
+            
+        
+            
+    </Grid>
 </ContentPage>
