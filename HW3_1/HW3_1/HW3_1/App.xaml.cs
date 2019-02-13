@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Collections.ObjectModel;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace HW3_1
@@ -12,6 +13,7 @@ namespace HW3_1
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
+
         }
 
         protected override void OnStart()
