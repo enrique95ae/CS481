@@ -3,20 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-
-namespace HW3_2.Views
+namespace HW3_2
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ItemsPage : ContentPage
+    public partial class MainPage : TabbedPage
     {
-        public ItemsPage()
+        public MainPage()
         {
             InitializeComponent();
-
         }
     }
 }

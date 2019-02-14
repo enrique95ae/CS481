@@ -10,19 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />  
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Remove="Views\NewItemPage.xaml" />
-    <EmbeddedResource Remove="Views\ItemDetailPage.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Views\NewItemPage.xaml.cs" />
-    <Compile Remove="Views\ItemDetailPage.xaml.cs" />
-    <Compile Remove="ViewModels\ItemsViewModel.cs" />
-    <Compile Remove="ViewModels\AboutViewModel.cs" />
-    <Compile Remove="ViewModels\BaseViewModel.cs" />
-    <Compile Remove="Services\IDataStore.cs" />
-    <Compile Remove="Services\MockDataStore.cs" />
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
   </ItemGroup>
 </Project>

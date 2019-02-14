@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="HW3_2.HobbiesPage">
+             
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Surf" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCCucAU8qU8I6lqP9yY1gH9d5Ak-mh2TAvbN3BA7nhAaIjwfAiA" HeightRequest="150" WidthRequest="250"/>
+            <Label Text="Camping" HorizontalOptions="Center" VerticalOptions="Center"  />
+            <Image Source="https://www.discovermoab.com/wp-content/uploads/2017/10/camping-blm.jpg" HeightRequest="150" WidthRequest="250"/>
+            <Label Text="Videogames" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPcXsNO1JvCyiMqoCvlemzqCxPmIhMHZqEO11HZEhHQKarLDctA" HeightRequest="150" WidthRequest="250"/>
+            </StackLayout>
+        </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="HW3_2.InterestsPage">
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Science" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Image Source="http://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/shutterstock_292800188--tojpeg_1436282518366_x1.jpg" HeightRequest="150" WidthRequest="350"/>
+            <Label Text="Traveling" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Image Source="http://mcdaniel.hu/wp-content/uploads/2015/02/globe-map-suitcase-travel-1176x445.jpg" HeightRequest="150" WidthRequest="250"/>
+            <Label Text="Food" HorizontalOptions="Center" VerticalOptions="Center" />
+            <Image Source="https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg" HeightRequest="150" WidthRequest="250"/>
+            </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,18 +1,15 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using HW3_2.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace HW3_2
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
-
 
             MainPage = new MainPage();
         }
