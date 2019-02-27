@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace APIpracticeApp
@@ -22,8 +23,15 @@ namespace APIpracticeApp
             Uri dogApiUri = new Uri(dogApiEndpoint);
 
             HttpClient client = new HttpClient();
+            DogData dogData = new DogData();
 
-            var response = await client.GetAsync(dogApiUri);
+            HttpResponseMessage response = await client.GetAsync(dogApiUri);
+
+            string jsonContent = await response.Content.ReadAsStringAsync();
+
+            dogData = JsonConvert.DeserializeObject<DogData>(jsonContent);
+
+            dogImage.Source = dogData.Message;
         }
     }
 }

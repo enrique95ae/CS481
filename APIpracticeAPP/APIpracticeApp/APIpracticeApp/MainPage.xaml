@@ -9,7 +9,9 @@
         
         <Image
             x:Name="dogImage"
-            Source=""
+            Source="{Binding Message}"
+            MinimumWidthRequest="500"
+            MinimumHeightRequest="500"
             />
         
         <Button
