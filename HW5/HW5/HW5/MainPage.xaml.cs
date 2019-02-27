@@ -17,12 +17,13 @@ namespace HW5
     public partial class MainPage : ContentPage
     {
         public List<ProductData> items;
+        ProductData productDataFromJson = new ProductData();
 
 
 
         /* ===== ||\    /|| ||==\       ==     ||==\     ======  //==\\   ||\      || =======
          *  ||   || \  / || ||   \     /  \    ||   \      ||   //    \\  || \     ||    ||          \
-         *  ||   ||  \/  || ||    \   /    \   ||    \     ||   ||    ||  ||  \    ||    ||     ======\ CHANGE THE "fileName" VALUE TO MATCH THE PATH OF THE JSON FILE.
+         *  ||   ||  \/  || ||    \   /    \   ||    \     ||   ||    ||  ||  \    ||    ||     ======\ CHANGE THE "fileName" VALUE TO MATCH THE PATH OF THE LOCAL JSON FILE.
          *  ||   ||      || ||    /  ||    ||  ||    /     ||   ||====||  ||   \   ||    ||     ======/
          *  ||   ||      || ||====   ||    ||  ||====      ||   ||    ||  ||    \  ||    ||          /
          *  ||   ||      || ||        \   /    ||\\        ||   ||    ||  ||     \ ||    ||          
@@ -30,8 +31,7 @@ namespace HW5
          */
 
 
-        public string fileName = "/Users/enriquealonsoesposito/Desktop/CSUSM/CS481 Mobile Programming/HW5/HW5/HW5/products.json";
-
+        public string fileName = "./products.json";
 
         public MainPage()
         {
@@ -43,11 +43,31 @@ namespace HW5
         {
             using (StreamReader r = new StreamReader(fileName))
             {
+
                 string json = r.ReadToEnd();
                 items = JsonConvert.DeserializeObject<List<ProductData>>(json);
             }
-            ProductsListView.ItemsSource = items;
+             ProductsListView.ItemsSource = items;
         }
+
+        //public void LoadJson()
+        //{
+        //    //var fileName = "HW5.products.json";
+
+        //    var assembly = typeof(MainPage).GetTypeInfo().Assembly;
+        //    Stream stream = assembly.GetManifestResourceStream(fileName);
+
+        //    using (var reader = new System.IO.StreamReader(stream))
+        //    {
+        //        var jsonAsString = reader.ReadToEnd();
+        //        productDataFromJson = JsonConvert.DeserializeObject<ProductData>(jsonAsString);
+
+        //    }
+
+
+        //    ProductsListView.ItemsSource = new ObservableCollection<ProductData>(productDataFromJson);
+
+        //}
 
         private async void Handle_Clicked(object sender, System.EventArgs e)
         {

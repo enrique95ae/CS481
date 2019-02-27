@@ -148,7 +148,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="Xamarin.Forms" Version="3.5.0.169047" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -156,5 +156,11 @@
       <Project>{7E7902E6-626B-40BC-8264-BE9453CCB6E9}</Project>
       <Name>HW5</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\products.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\products.json" />
   </ItemGroup>
 </Project>
