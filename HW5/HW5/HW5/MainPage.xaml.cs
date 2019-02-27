@@ -17,20 +17,7 @@ namespace HW5
     public partial class MainPage : ContentPage
     {
         public List<ProductData> items;
-        ProductData productDataFromJson = new ProductData();
-
-
-
-        /* ===== ||\    /|| ||==\       ==     ||==\     ======  //==\\   ||\      || =======
-         *  ||   || \  / || ||   \     /  \    ||   \      ||   //    \\  || \     ||    ||          \
-         *  ||   ||  \/  || ||    \   /    \   ||    \     ||   ||    ||  ||  \    ||    ||     ======\ CHANGE THE "fileName" VALUE TO MATCH THE PATH OF THE LOCAL JSON FILE.
-         *  ||   ||      || ||    /  ||    ||  ||    /     ||   ||====||  ||   \   ||    ||     ======/
-         *  ||   ||      || ||====   ||    ||  ||====      ||   ||    ||  ||    \  ||    ||          /
-         *  ||   ||      || ||        \   /    ||\\        ||   ||    ||  ||     \ ||    ||          
-         * ===== ||      || ||         \=/     || \\       ||   ||    ||  ||      \||    ||
-         */
-
-
+         
         public string fileName = "./products.json";
 
         public MainPage()
@@ -49,26 +36,7 @@ namespace HW5
             }
              ProductsListView.ItemsSource = items;
         }
-
-        //public void LoadJson()
-        //{
-        //    //var fileName = "HW5.products.json";
-
-        //    var assembly = typeof(MainPage).GetTypeInfo().Assembly;
-        //    Stream stream = assembly.GetManifestResourceStream(fileName);
-
-        //    using (var reader = new System.IO.StreamReader(stream))
-        //    {
-        //        var jsonAsString = reader.ReadToEnd();
-        //        productDataFromJson = JsonConvert.DeserializeObject<ProductData>(jsonAsString);
-
-        //    }
-
-
-        //    ProductsListView.ItemsSource = new ObservableCollection<ProductData>(productDataFromJson);
-
-        //}
-
+    
         private async void Handle_Clicked(object sender, System.EventArgs e)
         {
             var menuItem = (MenuItem)sender;
