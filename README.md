@@ -4,7 +4,7 @@ Course taken during spring 2019 at CSUSM.
 
 ## Summary
 
-In this repo you will find various HW assignments for this mobile programming class. All the assignments are done using Xamarin.Forms.
+In this repo you will find many HW assignments for this mobile programming class. All the assignments are done using Xamarin.Forms.
 
 #### HW1: Create a basic app displaying a label with some personal information.
 #### HW2: Create a basic calculator. Operations are functional.
